@@ -71,6 +71,20 @@ public class Main {
 		 * graph.addEdge(9, 10); graph.addEdge(10, 13); graph.addEdge(12, 9);
 		 */
 		
+		Graph graph = new Graph(4);
+		
+		for (int i = 0; i < 4; i++) {
+			
+			graph.addVertex(i);
+		}
+		
+		graph.addEdge(1, 0);
+		graph.addEdge(1, 3);
+		graph.addEdge(2, 1);
+		graph.addEdge(2, 3);
+		
+		topologicalSortTest(graph);
+		
 		//dfsTest(graph);
 		
 		//topologicalSortTest(graph);
@@ -85,7 +99,7 @@ public class Main {
 		
 		//bellmanfordTest();
 		
-		dijkstraTest();
+		//dijkstraTest();
 	}
 
 	private static void bellmanfordTest() {
